@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Coastwake privacy policy: location, AISstream, map tiles, place searches, purchases and your choices.">
+<meta name="color-scheme" content="light">
+<title>Coastwake privacy policy</title>
+<style>
+:root {color-scheme:light} body {max-width:50rem;margin:3rem auto;padding:0 1.25rem 3rem;color:#173341;background:#f8fcfc;font:1rem/1.65 system-ui,sans-serif} h1 {font-size:clamp(2rem,6vw,3rem);line-height:1.15} h2 {line-height:1.3;margin-top:2.2rem} a {color:#086b73;overflow-wrap:anywhere} a:focus-visible {outline:3px solid #086b73;outline-offset:3px} .metadata {padding:1rem 1.25rem;background:#e6f3f1;border-radius:.75rem} main {display:block} @media print {body {background:white;margin:0;max-width:none}}
+</style></head><body><main>
+<h1>Coastwake privacy policy</h1>
+<p class="metadata"><strong>Effective date:</strong> 22 October 2026<br><strong>Developer:</strong> Julio<br><strong>Privacy contact:</strong> <a href="mailto:juliojdeveloper@gmail.com">juliojdeveloper@gmail.com</a></p>
+<section><h2>About Coastwake</h2>
+<p>Coastwake is an Android maritime map application (com.jdeveloper.coastwake) provided by Julio, an independent developer. This policy describes the personal-key version of the app, in which your phone connects directly to the services described below. For privacy questions, contact juliojdeveloper@gmail.com.</p>
+<p>No Coastwake account is required. Coastwake does not operate a server to receive your location, AISstream key, vessel reports or purchase receipts. The app does not include advertising or Coastwake analytics tracking.</p>
+</section>
+<section><h2>Location and your selected place</h2>
+<p>Free uses a place you select through search or coordinates, saves that focus on your device, and defaults to Port of Algeciras when no place is selected. Free does not require GPS permission.</p>
+<p>For Pro, when you grant Android location permission, Coastwake uses device location while the app is in use, including when map following is off. Location supports following and nearby-vessel information. Location updates stop when the app is paused. The app does not request background location permission or save a history of your device movements. The latest location may remain in memory while the app process is running.</p>
+<p>The area you view is disclosed through map requests and AIS subscriptions. When you follow your position, those requests can reveal your location area, even though the app does not send a separate exact GPS-fix field to AISstream.</p>
+</section>
+<section><h2>AISstream connection and API key</h2>
+<p>Live vessel reports require your own AISstream account and API key. The app encrypts the key locally using Android Keystore. It sends your key and subscription bounding boxes directly to AISstream using an encrypted WSS connection. The subscription center is rounded to a 0.05-degree grid. AISstream can receive the requested geographic area, your network IP address and connection information.</p>
+<p>AISstream independently handles its account and service data under its privacy policy. Its website policy describes request and account information, but does not specify a fixed retention period for every kind of service data. Contact AISstream for details about its retention or your account. Removing the key from Coastwake does not delete your AISstream account.</p>
+</section>
+<section><h2>Map tiles and place searches</h2>
+<p>MapLibre renders the map using tiles requested from OpenFreeMap over HTTPS. OpenFreeMap and its delivery providers receive tile requests and your network IP address. Requested tiles can disclose the area and detail level you view, including when the map follows you.</p>
+<p>OpenFreeMap states that routine access logs omit IP addresses, error logs may retain an IP address and requested URL for seven days, and temporary IP logging during security incidents may last up to 30 days. Its current policy explains provider and CDN handling.</p>
+<p>When you submit a place-name search, the query is sent to the geocoding service configured on your Android device. The provider depends on the device and handles the request under its own terms and privacy policy. Coastwake does not add a device GPS fix to that query. Search results are cached in app memory; the selected place name and coordinates are saved on your device. Coordinate input is parsed locally, but viewing the selected area still causes map and AIS requests.</p>
+</section>
+<section><h2>Purchases</h2>
+<p>Optional Coastwake Pro purchases are processed by Google Play. Google handles payment details and maintains the purchase on your Google Play account. Coastwake receives purchase metadata, including the product, purchase token, state and signed receipt, to check and restore access. It stores signed purchase proof locally and checks purchase status with Google Play when the app resumes or you restore a purchase.</p>
+<p>Coastwake does not receive your payment-card details or send purchase receipts to AISstream or a Coastwake server. Uninstalling the app or removing an AISstream key does not automatically cancel or refund a Play purchase. Manage purchase and refund requests through Google Play.</p>
+</section>
+<section><h2>Storage, retention and security</h2>
+<p>Your encrypted API key and selected place remain on this device until you remove or replace them, clear the app data or uninstall the app. Preferences and cached purchase proof are also stored locally. Vessel reports and search results are held in app memory. Android app backup is disabled.</p>
+<p>Network requests use HTTPS or WSS in the release app, and the personal API key is encrypted at rest with Android Keystore. No storage or network system can guarantee absolute security.</p>
+<p>External services control retention of the information they receive. They may process information outside your country under their own policies. If you email support, your email address and the information you provide are used to respond and resolve your request; avoid sending your API key or payment details.</p>
+</section>
+<section><h2>Your choices and privacy requests</h2>
+<p>You can deny or revoke location permission in Android Settings and continue using the fixed-place view. In Coastwake Settings you can replace or remove the personal AISstream key and choose a different focus point. Clear app storage or uninstall the app to remove its local data.</p>
+<p>Contact juliojdeveloper@gmail.com for questions or requests about information you have sent to the developer, including access, correction or deletion where applicable. For information held by AISstream, Google, your geocoding provider or the tile provider, use that provider&#x27;s privacy controls or contact details. The developer cannot remotely retrieve or erase data stored only on your phone.</p>
+</section>
+<section><h2>This privacy page and policy changes</h2>
+<p>This page is hosted on GitHub Pages. GitHub may process visitors&#x27; IP addresses for security under its own privacy statement. The page uses no analytics, cookies, external fonts or tracking scripts added by Coastwake.</p>
+<p>We will update this policy when the app&#x27;s data handling changes and revise the effective date. Review the current policy through the app&#x27;s privacy link.</p>
+</section>
+<section><h2>Provider privacy policies</h2><ul><li><a href="https://aisstream.io/privacypolicy">AISstream privacy policy</a></li><li><a href="https://openfreemap.org/privacy/">OpenFreeMap privacy policy</a></li><li><a href="https://policies.google.com/privacy">Google privacy policy</a></li><li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a></li></ul></section>
+</main></body></html>
